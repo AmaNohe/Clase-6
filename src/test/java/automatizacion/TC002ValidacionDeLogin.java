@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class TC002ValidacionDeLogin {
 //Script para validar el login Page
     WebDriver driver;
@@ -16,8 +15,7 @@ public class TC002ValidacionDeLogin {
         driver = new chromeDriver ();
         driver.manage(). window(). maximize();
     }
-
-// Test 1: Validar el titulo de la pagina ante de realizar el login
+ // Test 1: Validar el titulo de la pagina ante de realizar el login
     @Test
     public void validarTituloDeLaPagina(){
         //abrir navegador
@@ -57,11 +55,11 @@ public class TC002ValidacionDeLogin {
 
     }
 
-   //Acciones que se vean a ejecutar después de cada Test. 
+    Acciones que se vean a ejecutar después de cada Test. 
     @afterEach
     public void cerrarSesion(){
-        driver.quit()
-    }
+    driver.quit();
+   }
 
     
 }
